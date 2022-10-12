@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">id</th>
+                                <th scope="col">email </th>
+                                <th scope="col">first_name</th>
+                                <th scope="col">last_name</th>
+                                <th scope="col">avatar</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of getUsers.data">
+                                <td>{{i.id}}</td>
+                                <td>{{i.email}}</td>
+                                <td>{{i.first_name}}</td>
+                                <td>{{i.last_name}}</td>
+                                <td><img src="{{i.avatar}}" alt=""></td>
+                            </tr>
+                              
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
